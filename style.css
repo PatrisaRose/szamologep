@@ -23,7 +23,6 @@ article {
     padding: 5px;
 }
 .szamok {
-    grid-area: szam;
     display: flex;
     flex-wrap: wrap;
     width:100px;

@@ -60,8 +60,7 @@ function button() {
             CLASS("kifejezes")[0].innerHTML += muvjel2;
 
         }
-        if (muvjel2!=".")/*A tizedesjelet nem tárolom el, hogy lehessen tizedes számokkal számolni, ne darabolja fel. */
-        muvjel=muvjel2;
+       
     }
     
 
@@ -78,16 +77,13 @@ function eredmeny() {
     var muveletVege = 0;
     var kifejezes = CLASS("kifejezes")[0].innerHTML;
     var darabol = kifejezes.split(muvjel);
-   
-    /*console.log(kifejezes);
-    console.log(darabol);*/
-   
+    
     var szamok=[];
 
     szamok.push(parseFloat(darabol[0]));
     szamok.push(parseFloat(darabol[1]));
     
-    /*console.log(szamok);*/
+    
 
     switch (muvjel) {
         case "+":
@@ -105,7 +101,7 @@ function eredmeny() {
         default:
             break;
     }
-    /*console.log(muveletVege);*/
+    
     CLASS("eredmeny")[0].innerHTML ="="+ muveletVege;
 }
 
